@@ -29,7 +29,12 @@
 	    margin-top: 90px;
 	
 	}
-
+	#main-projects {
+	    padding-top: 30px;
+	}
+	.project_images {
+	    height: 300px;
+	}
 	</style>
   </head>
 
@@ -63,6 +68,15 @@
     <div id="welcome_portfolio"><h2> Portfolio: </h2>
 				<p>Checkout my most recent work. Source code can be found through my Github </p>
     </div>
+
+   <div id="main-projects">
+	<div class="container">
+	    <div class="row"> 
+		<div class="col-lg-6"><img class="project_images" src="projects/img/blog.png"> </div>
+		<div class="col-lg-6"><img class="project_images" src="projects/img/github.png"> </div>
+	    </div>
+	 </div>
+   </div>
 	
     <!-- Footer -->
     <footer>
