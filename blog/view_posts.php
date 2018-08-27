@@ -7,7 +7,7 @@ $row = $stmt->fetch();
 //if post does not exists redirect user.
 if($row['postID'] == ''){
 	header('Location: ./');
-	exit;
+	exit();
 }
 
 ?>
@@ -18,21 +18,65 @@ if($row['postID'] == ''){
     <title>Blog - <?php echo $row['postTitle'];?></title>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/view_posts.css">
 </head>
 
 <style>
-   * {
-   	text-align: center;
-   }
+    #wrapper {
+    	margin-left: 25%;
+	margin-right: 25%;
+    }
+    img {
+	width: 100%
+    }
+    p {
+	line-height: 35px;
+	font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+    }
 
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
 </style>
 <body>
+     <div style="margin-bottom: 55px;">
+     <ul>
+  	<li><a class="active" href="#home">Home</a></li>
+  	<li><a href="#contact">Contact</a></li>
+     </ul>
+     </div>
 
-	<div id="wrapper">
+<div id="wrapper">
 
 		<h1>Blog</h1>
 		<hr />
-		<p><a href="./">Blog Index</a></p>
 
 
 		<?php	
