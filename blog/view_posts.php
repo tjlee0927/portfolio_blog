@@ -46,7 +46,7 @@ if($row['postID'] == ''){
 }
 
 li {
-    float: left;
+    float: right;
 }
 
 li a {
@@ -62,14 +62,19 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: black;
+}
+.nav_bar {
+    float: right;
 }
 </style>
 <body>
      <div style="margin-bottom: 55px;">
      <ul>
-  	<li><a class="active" href="#home">Home</a></li>
-  	<li><a href="#contact">Contact</a></li>
+<!--
+	<li><a class="contact nav_bar" href="#home">Contact</a></li>
+-->
+  	<li><a href="index.php">Home</a></li>
      </ul>
      </div>
 

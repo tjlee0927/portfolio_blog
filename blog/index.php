@@ -43,10 +43,12 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="portfolio.php">Portfolio</a>
-            </li>
+	    </li>
+<!--
             <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact</a>
-            </li>
+	    </li>
+-->
           </ul>
         </div>
       </div>
