@@ -21,7 +21,8 @@
   } 
   ?>
   <h2>Live Chat Application</h2>
-
+  <h3> Welcome <?php echo $_SESSION['user_name']; ?></h3>
+  <div id="message_board"> </div>
 
   <button class="open-button">Chat</button>
   
