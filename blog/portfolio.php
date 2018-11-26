@@ -34,6 +34,9 @@
 	}
 	.project_images {
 	    height: 300px;
+	    width: 500px;
+	    border: solid;
+	    border-width: 1px;
 	}
 	</style>
   </head>
@@ -74,8 +77,8 @@
    <div id="main-projects">
 	<div class="container">
 	    <div class="row"> 
-		<div class="col-lg-6"><img class="project_images" src="projects/img/blog.png"> </div>
-		<div class="col-lg-6"><img class="project_images" src="projects/img/github.png"> </div>
+		<a href="./index.php"><div class="col-lg-6"><img class="project_images" src="projects/img/blog.png"></div></a>
+		<a href="github_finder_app/index.html"><div class="col-lg-6"><img class="project_images" src="projects/img/github.png"></div></a>
 	    </div>
 	 </div>
    </div>
